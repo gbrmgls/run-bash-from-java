@@ -35,6 +35,8 @@ public class Main {
 		if (process.waitFor() == 0) {
 			System.out.println("From code: Executed command: 'bash -c ./" + commandText + "'");
 			System.out.println(output);
+		} else {
+			System.out.println("Execution failed.");
 		}
 	}
 }
